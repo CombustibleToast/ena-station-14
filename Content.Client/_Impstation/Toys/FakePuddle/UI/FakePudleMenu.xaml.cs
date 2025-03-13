@@ -30,4 +30,9 @@ public sealed partial class FakePuddleMenu : DefaultWindow
         // IoCManager.InjectDependencies(this);
         // MinSize = SetSize = new Vector2(400, 150);
     }
+
+    public void UpdateState()
+    {
+        
+    }
 }

@@ -639,17 +639,17 @@
   - type: Transform
     noRot: true
   - type: ActivatableUI
-    # inHandsOnly: false
-    # singleUser: true
-    # requireActiveHand: false
+    inHandsOnly: false
+    singleUser: true
+    requireActiveHand: false
   #   key: enum.InstrumentUiKey.Key
   # - type: UserInterface
   #   interfaces:
   #     enum.InstrumentUiKey.Key:
   #       type: InstrumentBoundUserInterface
-    key: enum.FakePuddleUiKey.Key
+    key: enum.FakePuddleUIKey.Key
   - type: UserInterface
     interfaces:
-      enum.FakePuddleUiKey.Key:
+      enum.FakePuddleUIKey.Key:
         type: FakePuddleBoundUserInterface
     
