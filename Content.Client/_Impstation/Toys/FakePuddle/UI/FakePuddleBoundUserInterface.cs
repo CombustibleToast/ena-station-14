@@ -10,6 +10,10 @@ public sealed class FakePuddleBoundUserInterface : BoundUserInterface
     protected override void Open()
     {
         base.Open();
+
+        _window = this.CreateWindow<FakePuddleMenu>();
+        // _window.OnApprove += SendApprove;
+        // _window.OnSetChange += SendChangeSelected;
     }
 
     protected override void UpdateState(BoundUserInterfaceState state)
