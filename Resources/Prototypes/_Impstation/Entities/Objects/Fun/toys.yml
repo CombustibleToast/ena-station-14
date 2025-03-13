@@ -624,3 +624,32 @@
   - type: Tag
     tags:
     - WoodwindInstrument
+
+- type: entity
+  parent: BaseItem
+  id: FakePuddle
+  name: fake puddle
+  description: Janitor's rage.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: /Textures/Fluids/puddle.rsi/
+    state: splat0
+  - type: Transform
+    noRot: true
+  - type: ActivatableUI
+    # inHandsOnly: false
+    # singleUser: true
+    # requireActiveHand: false
+  #   key: enum.InstrumentUiKey.Key
+  # - type: UserInterface
+  #   interfaces:
+  #     enum.InstrumentUiKey.Key:
+  #       type: InstrumentBoundUserInterface
+    key: enum.FakePuddleUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.FakePuddleUiKey.Key:
+        type: FakePuddleBoundUserInterface
+    
