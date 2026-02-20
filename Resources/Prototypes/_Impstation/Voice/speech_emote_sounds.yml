@@ -33,10 +33,10 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
+    # Wuhey: # QB - nowuhey
+    #   collection: Wuhey
+    # Ungh:
+    #   collection: Ungh
     Gasp:
       collection: UnisexGasp
     DefaultDeathgasp:
