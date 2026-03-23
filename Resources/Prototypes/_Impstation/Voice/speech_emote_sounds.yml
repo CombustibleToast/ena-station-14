@@ -959,7 +959,6 @@
     DefaultDeathgasp:
       /Audio/_Impstation/Allulalo/allulalo_deathgasp.ogg
 
-<<<<<<< HEAD
 
 - type: emoteSounds
   id: UnisexAnt
@@ -1010,8 +1009,6 @@
     variation: 0.125
     pitch: 3
 
-=======
->>>>>>> qb
 #body emotes
 - type: emoteSounds
   id: SlimeBodyEmotes
