@@ -21,7 +21,7 @@ using Content.Shared.Weapons.Melee.Events;
 using JetBrains.Annotations;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
-using Content.Shared._DV.Chemistry.Components; //DeltaV
+using Content.Shared._DV.Chemistry.BlockInjection; // imp
 
 namespace Content.Shared.Chemistry.EntitySystems;
 
@@ -43,6 +43,7 @@ public sealed partial class InjectorSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainer = default!;
     [Dependency] private readonly StandingStateSystem _standingState = default!;
     [Dependency] private readonly UseDelaySystem _useDelay = default!;
+    [Dependency] private readonly BlockInjectionSystem _blockInjection = default!;
 
     public override void Initialize()
     {
@@ -197,7 +198,7 @@ public sealed partial class InjectorSystem : EntitySystem
     {
         if (HasComp<BlockInjectionComponent>(target)) // DeltaV
         {
-            _popup.PopupEntity(Loc.GetString("injector-component-deny-user"), target, user);
+            _popup.PopupClient(Loc.GetString("injector-component-deny-user"), target, user);
             return false;
         }
 
